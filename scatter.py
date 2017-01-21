@@ -11,7 +11,8 @@ df = pd.read_csv('Pokemon.csv')
 from bokeh.charts import Scatter, output_file, save
 
 # create the scatter chart
-p = Scatter(df, x='Attack', y='Defense', title="Attack vs. Defense Stats", xlabel="Attack", ylabel="Defense")
+p = Scatter(df, x='Attack', y='Defense', title="Attack vs. Defense Stats", 
+            xlabel="Attack", ylabel="Defense", color='Type 1', marker='Type 1')
 
 # create output file
 output_file('scatter.html')

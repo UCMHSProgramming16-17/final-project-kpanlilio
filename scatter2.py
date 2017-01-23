@@ -17,7 +17,7 @@ tooltips=[
 ]
 
 # create the scatter chart
-p = Scatter(df, x='Sp. Atk', y='Sp. Def', title="Attack vs. Defense Stats (Color-coded by Generation)", 
+p = Scatter(df, x='Sp. Atk', y='Sp. Def', title="Sp.Attack vs. Sp.Defense Stats (Color-coded by Generation)", 
             xlabel="Special Attack", ylabel="Special Defense", color='Generation', tooltips=tooltips)
 
 # create output file
